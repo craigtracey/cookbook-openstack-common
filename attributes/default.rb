@@ -306,3 +306,11 @@ default['openstack']['logging']['ignore'] = {'nova.api.openstack.wsgi' => 'WARNI
 
 # override search for memcache_servers by setting this attribute
 default['openstack']['memcache_servers'] = nil
+
+# Default message queue settings
+default['openstack']['mq']['service_type'] = "rabbitmq"
+default['openstack']['mq']['host'] = "127.0.0.1"
+
+default['openstack']['mq']['rabbitmq']['port'] = "5672"
+default['openstack']['mq']['rabbitmq']['user'] = "guest"
+default['openstack']['mq']['rabbitmq']['vhost'] = "/"
