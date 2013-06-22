@@ -2,6 +2,9 @@
 
 This file is used to list changes made in each version of cookbook-openstack-common.
 
+## 0.3.1:
+* Add default attributes for configuring messaging, specifically rabbit.
+
 ## 0.3.0:
 * Added `#rabbit_servers` method, which returns a list of rabbit servers.
 * The `#memcached_servers` method no longer accepts an environment.
