@@ -256,6 +256,12 @@ default['openstack']['db']['compute']['host'] = "127.0.0.1"
 default['openstack']['db']['compute']['port'] = "3306"
 default['openstack']['db']['compute']['db_name'] = "nova"
 
+# Database used by the OpenStack Compute Baremetal driver
+default['openstack']['db']['compute-baremetal']['db_type'] = "mysql"
+default['openstack']['db']['compute-baremetal']['host'] = "127.0.0.1"
+default['openstack']['db']['compute-baremetal']['port'] = "3306"
+default['openstack']['db']['compute-baremetal']['db_name'] = "nova_bm"
+
 # Database used by the OpenStack Identity (Keystone) service
 default['openstack']['db']['identity']['db_type'] = "mysql"
 default['openstack']['db']['identity']['host'] = "127.0.0.1"
